@@ -1,0 +1,118 @@
+@media only screen and (max-width: 1024px) {
+  section#Hero {
+    flex-wrap: wrap-reverse;
+  }
+  .title-text {
+    font-size: 50px;
+  }
+  section#Strategy {
+    flex-wrap: wrap;
+  }
+  #Strategy .left-col {
+    flex: 60%;
+  }
+
+  div.features-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr);
+    grid-gap: 20px;
+  }
+  section#Strategy .right-col {
+    overflow-x: scroll;
+    display: block;
+    scrollbar-width: none;
+  }
+  section#Strategy .right-col::-webkit-scrollbar {
+    width: 0;
+  }
+
+  #Strategy .right-col .scroll-wrapper {
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+  }
+  #Strategy .right-col .scroll-wrapper > div {
+    min-width: 260px;
+  }
+  div.card-2,
+  div.card-4 {
+    transform: translate(0);
+  }
+
+  #Feature-section {
+    flex-direction: column;
+  }
+  #header-div {
+    flex-direction: column;
+  }
+  #header-div .left-col h1 {
+    font-size: 27px;
+  }
+  #contact-us {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 744px) {
+  /* Typography-ulility_classes */
+  .title-text {
+    font-size: 26px;
+  }
+  .main-text {
+    font-size: 16px;
+    max-width: 90%;
+  }
+  .btn-primary {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .title-text-bl {
+    font-size: 24px;
+  }
+  #footer .footer-item h1 {
+    font-size: 48px;
+  }
+  /* ----------- */
+  nav .logo img,
+  .closebtn,
+  .open {
+    display: block;
+  }
+
+  nav {
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+  ul li {
+    text-align: center;
+  }
+  /* ------------ */
+  section#Hero {
+    flex-wrap: wrap-reverse;
+  }
+  #Hero .right-col img {
+    width: 260px;
+  }
+  div.features-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    grid-gap: 15px;
+  }
+  /* ----------- */
+
+  #footer .footer-detail {
+    border-left: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+    margin-top: 5%;
+  }
+}

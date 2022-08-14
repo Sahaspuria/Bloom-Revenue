@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="What We Do" content="width=device-width, initial-scale=1.0">
+    <title>Broom Revenue- Contact Us</title>
+    <link rel="shortcut icon" href="./Assets/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./Assets/Logo.png" alt=""></a>
+        </div>
+        <div class="open" onclick="openNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="nav">
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+            <div class="logo">
+                <img src="./Assets/header-logo.png" alt="Img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-links">Home</a></li>
+                <li><a href="./about-us.html" class="nav-links">What we do</a></li>
+                <li><a href="./contact-us.php" class=" btn-primary">Let's Talk</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="contact-us">
+            <div class="form-container">
+                <h1 class="title-text">Contact Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat arcu
+                    pellentesque duis luctus. </p>
+                <form onsubmit="return validation()" method="POST" action="<>">
+                    <div class="form-wrapper">
+                        <div class="Name">
+                            <input type="text" name="FName" id="FName" placeholder="Full Name" autocomplete="off">
+                            <span class="errorMessage" id="nameError"></span>
+                        </div>
+                        <div class="Email">
+                            <input type="text" name="Email" id="Email" placeholder="Email Address" autocomplete="off">
+                            <span class="errorMessage" id="emailError"></span>
+                        </div>
+                        <div class="Number">
+                            <input type="text" name="Phone" id="Phone" placeholder="Phone Number" autocomplete="off">
+                            <span class="errorMessage" id="numberError"></span>
+                        </div>
+                        <div class="websiteURL">
+                            <input type="text" name="websiteURL" id="websiteURL" placeholder="Website URL"
+                                autocomplete="off">
+                            <span class="errorMessage" id="websiteError"></span>
+                        </div>
+                        <div class="CompanyName">
+                            <input type="text" name="companyName" id="companyName" placeholder="Company Name"
+                                autocomplete="off">
+                            <span class="errorMessage" id="companyNameError"></span>
+                        </div>
+                        <div class="mailSubject">
+                            <input type="text" name="mailSubject" id="mailSubject" placeholder="Subject"
+                                autocomplete="off">
+                            <span class="errorMessage" id="mailSubjectError"></span>
+                        </div>
+                        <div class="mailMessage">
+                            <input type="text" name="mailMessage" id="mailMessage" placeholder="How can we help?"
+                                autocomplete="off">
+                            <span class="errorMessage" id="mailMessageError"></span>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="personal-details">
+                <div class="office-details">
+                    <h3>Offices</h3>
+                    <div class="office-one">
+                        <p>United States<br>
+                            500 5th Avenue Suite 400, NY 10110</p>
+                    </div>
+                    <div class="office-two">
+                        <p>United Kingdom<br>
+                            High St, Bromley BR1 1DN</p>
+                    </div>
+                    <div class="office-three">
+                        <p>France<br>
+                            80 avenue des Terroirs de France, Paris</p>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <h3>For Quick Inquiries</h3>
+                    <p>
+                        +44
+                        7777777777</p>
+                    <p>+1 3333333330</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-item">
+            <h1>
+                Want to get Started?
+            </h1>
+            <div style="margin-top: 30px;"><a href="./contact-us.html" class="btn-primary"
+                    style="padding: 20px; margin: 0;">Let's Talk <i class="fa fa-arrow-right"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="footer-detail">
+            <div class="logo">
+                <a href="#Home"><img src="./Assets/Logo-footer.png" alt=""></a>
+            </div>
+            <div class="foot-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sed commodo massa posuere malesuada.
+                    Aenean at nibh risus cursus ac urna, a parturient. </p>
+            </div>
+            <div class="socials">
+                <div class="fb">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="insta">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+            </div>
+            <p class="copyright-text">Copyright © 2021 Bloom Revenue, LLC - All Rights <Reserved class=""></Reserved>
+            </p>
+        </div>
+    </footer>
+
+</body>
+<script src="./main.js"></script>
+
+</html>
